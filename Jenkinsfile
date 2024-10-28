@@ -42,8 +42,8 @@ pipeline {
                         bat '"C:\\Program Files\\nodejs\\node" -v'
                         bat '"C:\\Program Files\\nodejs\\npm" -v'
                         
-                        // Install dependencies using npm ci for clean installs
-                        bat '"C:\\Program Files\\nodejs\\npm" ci || exit 1'
+                        // Install dependencies using npm install
+                        bat '"C:\\Program Files\\nodejs\\npm" install || exit 1'
                     }
                 }
             }
